@@ -1,0 +1,22 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Mosquitto runtime data
+mosquitto/data/*
+!mosquitto/data/.gitkeep
+
+# Mosquitto logs
+mosquitto/log/*
+!mosquitto/log/.gitkeep
+
+# Log files
+*.log
+
+# Operating system files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
