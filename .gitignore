@@ -20,3 +20,9 @@ Thumbs.db
 
 # Temporary files
 *.tmp
+
+# Temporary MQTT testing
+telemetry.json
+
+# Local VS Code settings
+.vscode/

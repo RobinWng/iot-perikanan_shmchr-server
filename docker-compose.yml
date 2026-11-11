@@ -10,4 +10,13 @@ services:
     volumes:
       - ./mosquitto/config:/mosquitto/config
       - ./mosquitto/data:/mosquitto/data
-      - ./mosquitto/log:/mosquitto/loggit 
+      - ./mosquitto/log:/mosquitto/log
+  backend:
+    build:
+      context: ./backend
+    container_name: iot-backend
+    restart: unless-stopped
+
+    depends_on: 
+      - mosquitto
+
